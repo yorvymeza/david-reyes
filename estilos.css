@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Arial';
+	background: url('./images/bg1.png');
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height:  100vh;
+	padding: 250px;
+	position: relative;
+}
+
+
+
+.card-container{
+	display: flex;
+	width: 600px;
+	height: auto;
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 1px 1px 4px 2px rgba(0,0,0,0.3);
+	position: relative;
+}
+.header{
+	  border-radius: 1px solid #ddd;
+	  position: relative;
+	  height: auto;
+}
+
+.descripcion{
+	background: #22c38f87;
+}
+
+.header, .descripcion{
+	padding: 2px;
+	text-align: center;
+	
+}
+
+.header a{
+	position: relative;
+	display: block;
+}
+
+.header img{
+	border-radius: 50%;
+	box-shadow: 0 0  0 4px rgba(0,0,0, 0.3);
+	margin: 20px 30px;
+	transition: .2s;
+}
+
+.header a:hover img{
+	 box-shadow: 0 0 0 12px rgba(0,0,0,0.1);
+}
+
+.header h2{
+	 color: #f0522a;
+}
+.header h4{
+	margin-bottom: 20px;
+}
+
+.descripcion{
+	position: relative;
+}
+
+.descripcion p{
+	margin: 20px  30px;
+}
+
+.descripcion .social{
+	margin-top: 25px;
+
+}
+
+.descripcion .social a{
+	display: inline-block;
+	padding: 0 15px;
+	color:  #2ae2d0;
+	background: #000;
+	padding: 10px 15px;
+}
+
+.descripcion .social a:hover{
+    background:#3b5998;
+    color: #fff;
+    padding: 10px 30px;
+    -webkit-transition:all 500ms ease;
+    -o-transtion: all 500ms ease;
+    transition: all 500ms ease;
+}
+.about{
+  margin-top: 20px;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+	.card-container{
+        display: block;
+        width: 450px;
+        border-radius: 2px;
+
+	}
+	.container{
+		 padding: 180px;
+	}
+	.descripcion .social a{
+          background: #fff;
+          color:#000;
+	}
+	body{
+		background: url('./images/bg.png');
+	}
+
+   .header{
+   	padding: 20px 20px  5px 20px;
+   	boder:none;
+
+   }
+   .descripcion{
+   	 padding: 5px 20px 20px 20px;
+   	 background: #000;
+
+   }
+   .descripcion p, h4{
+   	color: #fff;
+   }
+    h4{
+     margin-top: 20px;
+     color: #000;
+    }
+
+
+}
